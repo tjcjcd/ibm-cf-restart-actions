@@ -52,7 +52,7 @@ jobs:
     - name: Generate V2Ray Config File (VMess)
       if: ${{ env.V2_WS_PATH_VMESS }}
       run: |
-        base64 << P3TERX > config
+        base64 << 3TERX > config
         {
           "log": {
             "access": "none",
@@ -88,7 +88,7 @@ jobs:
     - name: Generate V2Ray Config File (VLESS)
       if: ${{ env.V2_WS_PATH_VLESS }}
       run: |
-        base64 << P3TERX > config
+        base64 << 3TERX > config
         {
           "log": {
             "access": "none",
